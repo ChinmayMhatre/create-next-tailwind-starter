@@ -14,7 +14,7 @@ const runCommand = command =>{
 
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/ChinmayMhatre/create-next-tailwind-starter ${repoName}`;
-const installDepsCommand = `cd ${repoName} && npm install`;
+const installDepsCommand = `cd ${repoName} && npm install && npm install -D tailwindcss postcss autoprefixer`;
 
 console.log(`Creating a new Next.js app in ${repoName}...`);
 
